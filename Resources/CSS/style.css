@@ -1,0 +1,284 @@
+/* =============================================
+    Template Name: G3 Architect
+    Template URI:
+    Description: An awesome portfolio template
+    Author: Ariful Islam
+    Author URI: arifulislamabir.com
+    Support: ariful.islam2874@gmail.com
+    Version: 1.0.0
+================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+/*=================================
+    CSS INDEX
+=================================*/
+
+/*=================================
+    1. Reuseable Component
+=================================*/
+.row{
+    max-width: 1180px;
+    margin: auto;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-title h2{
+    font-size: 450%;
+    color: #000;
+    font-weight: 700;
+}
+
+/*=================================
+    2.Common CSS
+=================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body{
+    background: #fff;
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 640%;
+    font-weight: 700%;
+}
+
+section{
+    padding: 100px 0px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+p{
+    color: #727272;
+    font-size: 160%;
+}
+
+
+/*=================================
+    3.Header
+=================================*/
+
+#hero{
+   background-color: rgb(255, 144, 14, 0.1); 
+}
+.hero-text-box{
+    text-align: center;
+}
+.hero-text-box p{
+    color: #727272;
+    font-size: 160%;
+    font-weight: 400;
+}
+.btn {
+    background-color: #FF900E;
+    padding: 10px 30px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 200%;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    color: #FF900E;
+    background-color: transparent;
+}
+
+.hero-img img{
+    width: 80%;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+}
+
+/*=================================
+    FFeatures
+=================================*/
+
+.grid-features-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.grid-features-item img{
+    width: 100%;
+}
+.grid-features-item:nth-child(3){
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-features-item .feature-text-box{
+    max-width: 500px;
+    margin-left: 30px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+.grid-features-item .feature-text-box h2{
+    color: #727272;
+    font-size: 450%;
+    font-weight: 600;
+}
+.grid-features-item .feature-text-box h2 .h2span{
+    color: #000;
+    font-weight: 700;
+}
+.grid-features-item .feature-text-box h2 .h2span2{
+    color: #FF900E;
+}
+.grid-features-item .feature-text-box p{
+    font-size: 160%;
+    font-weight: 400;
+}
+
+/*=================================
+    Experience
+=================================*/
+.grid-experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+}
+.grid-experience-item h2{
+    font-size: 450%;
+    font-weight: 700;
+    letter-spacing: -3;
+    line-height: 0.9;
+    margin-bottom: 10px;
+}
+
+.nested-grid-experience-container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.nested-grid-experience-item h3{
+    font-size: 200%;
+}
+.nested-grid-experience-item{
+    padding: 25px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 1px 1px 5px #727272;
+}
+.experience-img{
+    text-align: end;
+}
+.experience-img img{
+    width: 80%;
+}
+.experience-img-text-box{
+    background-color: #FF900E;
+    display: inline-block;
+    text-align: center;
+    padding: 35px 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: absolute;
+    top: 70%;
+}
+
+.experience-img-text-box h2{
+    font-size: 650%;
+    font-weight: 700;
+    color: #fff;
+}
+.experience-img-text-box p{
+    font-size: 250%;
+    color: #fff;
+}
+
+/*=================================
+    Fact
+=================================*/
+.grid-fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 40px;
+}
+.grid-fact-item{
+    padding: 25px 15px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.grid-fact-item span{
+    display: block;
+    font-size: 650%;
+    font-weight: 700;
+}
+
+/*=================================
+    Sponsor
+=================================*/
+.grid-sponsor-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+    grid-gap: 20px;
+}
+/*=================================
+    Footer
+=================================*/
+#footer{
+    text-align: center;
+    padding: 40px;
+}
+#footer p{
+    background-color: #FFF4E7;
+    padding: 30px;
+}
