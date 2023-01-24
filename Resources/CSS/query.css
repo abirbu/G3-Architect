@@ -1,5 +1,5 @@
 @media screen and (max-width: 1200px){
-    .ham-icon{
+    .ham-icon ion-icon{
         display: none;
     }
     nav{
@@ -25,6 +25,12 @@
     }
 }
 @media screen and (max-width: 768px){
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color:#FF900e;
+    }
     nav ul{
         display: none;
     }
@@ -38,6 +44,7 @@
     }
     h1{
         font-size: 550%;
+        padding: 60px 0 0;
     }
     .grid-features-item .feature-text-box h2{
         font-size: 350%;
@@ -69,6 +76,9 @@
     }
     .grid-features-item .feature-text-box{
         margin: auto;
+    }
+    .ham-icon ion-icon{
+        display: block;
     }
 }
 
