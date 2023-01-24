@@ -1,0 +1,109 @@
+@media screen and (max-width: 1200px){
+    .ham-icon{
+        display: none;
+    }
+    nav{
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width: 1024px){
+    nav{
+        padding: 0 50px;
+    }
+    section{
+        padding: 80px 30px;
+    }
+    .experience-img-text-box{
+        padding: 20px 10px;
+        top:56%;
+    }
+    .experience-img-text-box h2{
+        font-size: 450%;
+    }
+    .ham-icon{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    nav ul{
+        display: none;
+    }
+    nav ion-icon{
+        font-size: 450%;
+    }
+    .ham-icon{
+        margin-top: 10px;
+        float: right;
+        display: block;
+    }
+    h1{
+        font-size: 550%;
+    }
+    .grid-features-item .feature-text-box h2{
+        font-size: 350%;
+    }
+    .experience-img img{
+        width: 100%;
+    }
+    .grid-experience-container{
+        grid-template-columns: 1fr;
+    }
+    .experience-img-text-box{
+        top: 96%;
+        left: 30%;
+    }
+    .grid-fact-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-sponsor-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-features-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-features-item:nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    .grid-features-item .feature-text-box{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px){
+    label{
+        font-size: 350%;
+    }
+    h1{
+        font-size: 450%;
+    }
+    .btn{
+        padding: 6px 18px;
+    }
+    .grid-features-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-features-item:nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 20px 0px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px){
+    section{
+        padding: 50px 10px;
+    }
+    .grid-fact-container{
+        grid-template-columns: 1fr ;
+    }
+    .grid-sponsor-container{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 100px;
+    }
+    nav {
+        padding: 0 20px;
+    }
+}

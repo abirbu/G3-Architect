@@ -85,6 +85,36 @@ p{
 /*=================================
     3.Header
 =================================*/
+nav{
+    padding: 0 200px;
+    padding-top: 30px;
+    margin: auto;
+    background-color: rgb(255, 144, 14, 0.1);
+}
+label {
+    font-size: 450%;
+}
+nav ul{
+    float: right;
+    margin-top: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 180%;
+    text-decoration: none;
+}
+nav ul li a{
+    color: #727272;
+}
+ul li a:hover{
+    color: #000;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
 
 #hero{
    background-color: rgb(255, 144, 14, 0.1); 
@@ -126,23 +156,41 @@ p{
     -o-transform: translate(-50%, 0);
 }
 
+/*Responsive Nav*/
+.responsive-nav-bar{
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 99999;
+    text-align: center;
+    display: none;
+}
+.res-nav-menu{
+    margin-top: 30%;
+}
+.res-nav-menu li a{
+    color: #fff;
+    font-size: 180%;
+}
+.ham-icon{
+    display: none;
+}
+.uk-navbar-sticky {
+    background-color: #FF900E;
+}
+
 /*=================================
-    FFeatures
+    Features
 =================================*/
 
 .grid-features-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 2fr;
     grid-gap: 10px;
 }
 .grid-features-item img{
     width: 100%;
-}
-.grid-features-item:nth-child(3){
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
 }
 .grid-features-item .feature-text-box{
     max-width: 500px;

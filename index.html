@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="Resources/CSS/style.css">
+    <link rel="stylesheet" href="Resources/CSS/query.css">
     <title>G3 Arcchitect</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
 </head>
 <body>
+    <div onclick="closeMenu(), showHam()" id="ham-menu" class="responsive-nav-bar">
+        <ul class="res-nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Log in</a></li>
+        </ul>
+    </div>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-animation-scale-down">
+            <label class="logo">
+                G3 Architects
+            </label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+            <div id="ham-icon" onclick="openMenu(), hideHam()" class="ham-icon">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </nav>
+    </div>
 
     <!--Hero section Strat-->
-    <section id="hero">
+    <section onclick="closeMenu(), showHam()" id="hero">
         <div class="row">
             <div class="hero-text-box">
                 <h1>Brand New <br> Group of Architects</h1>
@@ -26,7 +52,7 @@
     <!--Hero section End-->
 
     <!--Features section Strat-->
-    <section id="features">
+    <section onclick="closeMenu(), showHam()" id="features">
         <div class="row">
             <div class="grid-features-container">
                 <div class="grid-features-item">
@@ -54,7 +80,7 @@
     <!--Features section End-->
 
     <!--Experience section Strat-->
-    <section id="experience">
+    <section onclick="closeMenu(), showHam()" id="experience">
         <div class="row">
             <div class="grid-experience-container">
                 <div class="grid-experience-item">
@@ -95,7 +121,7 @@
 
 
     <!--Fact section Start-->
-    <section id="fact">
+    <section onclick="closeMenu(), showHam()" id="fact">
         <div class="row">
             <div class="section-title">
                 <h2>Some Fact</h2>
@@ -129,7 +155,7 @@
     <!--Fact section End-->
 
     <!--Sponsor section Strat-->
-    <section id="sponsor">
+    <section onclick="closeMenu(), showHam()" id="sponsor">
         <div class="row">
             <div class="section-title">
                 <h2>Our Sponsor</h2>
@@ -165,8 +191,11 @@
 
 
 
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit-icons.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="Resources/JS/script.js"></script>
 </body>
 </html>
